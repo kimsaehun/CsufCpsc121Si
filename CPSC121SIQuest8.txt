@@ -1,0 +1,12 @@
+5<7 && 7<7 true
+	5-6 >= 7-1 false
+x = 10
+y = 10
+z = 100
+	!10 > 100 || 100 < 20 true
+
+
+
+LEet game begin
+ The game stopped
+this is easy

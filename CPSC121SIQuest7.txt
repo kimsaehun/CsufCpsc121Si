@@ -1,0 +1,16 @@
+greater than			>
+less than			<
+equal to			==
+not equal to			!=
+less than or equal to		<=
+greater than or equal to	>=
+
+5 > 4				true
+7 <= 3				false
+
+if x = 6, y = 7 then:
+
+x == 9 is			false
+x != 7 is			true
+y >= 7 is			true
+
