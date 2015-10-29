@@ -26,6 +26,7 @@ int main() {
 	int round = 1;
 	int userRoll = 0, rexRoll = 0;
 	int userScore = 0, rexScore = 0;
+	
 
 	// Display Welcome Message
 	cout << "----- Welcome to Dice Rolls -----" << endl
@@ -35,6 +36,7 @@ int main() {
 	
 	// Roll till someone wins
 	while (userScore < 5 && rexScore < 5) {
+		srand(time(0));
 		cout << "----- ROUND " << round << " -----" << endl;
 		userRoll = die.roll();
 		cout << "Your roll is " << userRoll << endl;
@@ -82,14 +84,7 @@ Die::Die() {
 }
 
 int Die::roll() {
-	unsigned int seed = time(0);
-	if (seed % 2 == 0) {
-		seed = seed << previousRoll;
-	}
-	else {
-		seed = seed >> previousRoll;
-	}
-	srand(seed);
+	//srand(time(0));
 	previousRoll = rand() % numSides + 1;
 	return previousRoll;
 }
